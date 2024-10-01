@@ -1,9 +1,9 @@
-export default function ({children, buttons}) {
+export default function ({children, buttons, ButtonsContainer = 'menu'}) {
     return (
         <>
-            <menu>
+            <ButtonsContainer>
                 {buttons}
-            </menu>
+            </ButtonsContainer>
             {children}
         </>
     );
